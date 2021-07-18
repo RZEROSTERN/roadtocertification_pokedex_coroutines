@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="mx.dev1.pokedex.presentation.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_regionFragment"
+            app:destination="@id/regionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regionFragment"
+        android:name="mx.dev1.pokedex.presentation.region.RegionFragment"
+        android:label="region_fragment"
+        tools:layout="@layout/region_fragment" />
+</navigation>
